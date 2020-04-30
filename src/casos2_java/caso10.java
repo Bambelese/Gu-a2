@@ -18,18 +18,21 @@ public class caso10 {
 		
 		float importe = hora*tarifa;
 		
+		float bonificacion;
+		float descuento;
+		
 		if(hora>60) {
-			float bonificacion = (float)(importe*0.13);
+			bonificacion = (float)(importe*0.13);
 		}
 		else {
-			float bonificacion = (float)(importe*0.04);
+			bonificacion = (float)(importe*0.04);
 		}
 		
 		if(tarda>15) {
-			float descuento =(float)(importe*0.03);
+			descuento =(float)(importe*0.03);
 		}
 		else {
-			float descuento = 0;
+			descuento = 0;
 		}
 		float meta = (float)((70/hora)*100);
 		
